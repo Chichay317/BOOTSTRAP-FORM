@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open sans", sans-serif;
+}
+
+.container-1 {
+  margin: auto;
+  overflow: auto;
+}
+
+/* NAVBAR */
+.nav {
+  background-color: #6b1980;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #e9ecef;
+  padding: 15px 80px;
+  overflow: auto;
+}
+
+.nav-heading span {
+  font-size: 30px;
+}
+
+.nav-icon {
+  width: 40px;
+  height: 40px;
+  stroke: #ba1be2;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamburger {
+  display: none;
+}
+
+.nav-list .nav-link {
+  color: #e9ecef;
+  text-decoration: none;
+  padding-bottom: 3px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+  gap: 24px;
+  list-style: none;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    gap: 0;
+    padding: 10px 20px;
+    height: 67px;
+    overflow: hidden;
+    transition: all 0.3s ease-in;
+  }
+
+  .show {
+    height: 130px;
+  }
+
+  .logo-container {
+    align-self: flex-start;
+    width: 100%;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-list {
+    padding-top: 0;
+    list-style: none;
+  }
+}
+
+.pass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.25rem;
+  border: 1px solid #cde4da;
+}
+
+.password {
+  width: 100%;
+  border: none !important;
+}
+
+.password:focus {
+  border: none !important;
+}
+
+.c_pass {
+  width: 100%;
+  border: none !important;
+}
+
+c_pass:focus {
+  border: none !important;
+}
+
+.pass-icon {
+  cursor: pointer;
+  transform: translateX(-20%);
+}
+
+input:focus {
+  border: none !important;
+  outline: none !important;
+}
